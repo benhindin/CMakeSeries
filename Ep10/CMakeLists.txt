@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.30)
+project(HelloApp)
+add_subdirectory(src/math)
+add_subdirectory(src/stats)
+add_executable(HelloApp src/main.cpp)
+target_link_libraries(HelloApp PUBLIC libstats)
